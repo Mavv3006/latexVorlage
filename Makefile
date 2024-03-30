@@ -5,6 +5,12 @@ ABGABE_DIR    = ../abgabe/
 
 ####latexmk
 
+# Run clean and cleanup before building the report with latexmk
+build: 
+	make clean
+	make cleanup
+	make report
+
 # Build the LaTeX document with latexmk
 all: report
 
